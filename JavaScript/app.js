@@ -9,6 +9,7 @@ const cartTotal = document.querySelector('.cart-total');
 const cartContent = document.querySelector('.cart-content');
 const productsDom = document.querySelector('.products-center');
 
+
 // cart
 let cart = [];
 
@@ -78,6 +79,26 @@ class UI {
   productsDom.innerHTML = result;
  }
 
+
+ getBagButton() {
+  const buttons = [...document.querySelectorAll('.bag-btn')];
+  buttons.forEach(e => {
+   let id = e.dataset.id;
+   let inCart = cart.find(e => e.id === id);
+
+   if (inCart) {
+    e.innerText = 'In Cart';
+    e.disabled = true;
+   } else {
+    e.addEventListener('click', (e) => {
+     e.target.innerText = 'In Cart';
+     e.target.disabled = true;
+    })
+   }
+
+  })
+ }
+
 }
 
 
@@ -98,6 +119,8 @@ document.addEventListener('DOMContentLoaded', () => {
  products.getProducts().then(products => {
   ui.displayProducts(products)
   Storage.saveProducts(products);
- });
+ }).then(() => {
+  ui.getBagButton();
+ })
 
 });
