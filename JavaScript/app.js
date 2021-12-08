@@ -180,7 +180,37 @@ class UI {
             });
 
             // cart functionality
+            cartContent.addEventListener('click', (e) => {
+                  if (e.target.classList.contains('remove-item')) {
+                        let removeItem = e.target;
+                        let id = removeItem.dataset.id;
+                        cartContent.removeChild(removeItem.parentElement.parentElement);
+                        this.removeItem(id);
+                  } else if (e.target.classList.contains('fa-chevron-up')) {
+                        let addAmount = e.target;
+                        let id = addAmount.dataset.id;
+                        let tempItem = cart.find(e => e.id === id);
+                        tempItem.amount = tempItem.amount + 1;
+                        Storage.saveCart(cart);
+                        this.setCartValues(cart);
+                        addAmount.nextElementSibling.innerText = tempItem.amount;
 
+                  } else if (e.target.classList.contains('fa-chevron-down')) {
+                        let lowerAmount = e.target;
+                        let id = lowerAmount.dataset.id;
+                        let tempLowerAmount = cart.find(e => e.id === id);
+                        tempLowerAmount.amount = tempLowerAmount.amount - 1;
+                        if (tempLowerAmount.amount > 0) {
+                              Storage.saveCart(cart);
+                              this.setCartValues(cart);
+                              lowerAmount.previousElementSibling.innerText = tempLowerAmount.amount;
+
+                        } else {
+                              cartContent.removeChild(lowerAmount.parentElement.parentElement);
+                              this.removeItem(id);
+                        }
+                  }
+            })
       }
 
       clearCart() {
@@ -202,7 +232,7 @@ class UI {
             let button = this.getSingleButton(id);
             button.disabled = false;
             button.innerHTML = `<i class="fas fa-shopping-cart"></i>
-        add to cart`
+        add to cart `
 
       }
 
