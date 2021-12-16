@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>cozyHouse || CheckOut</title>
+ <!-- favicon -->
+ <link rel="shortcut icon" href="./css/favicon.ico" type="image/x-icon" />
+ <!-- end of favicon -->
+
+ <!-- font-awesome -->
+ <link rel="stylesheet" href="./css/fontawesome-free-5.12.1-web/css/all.min.css">
+ <!-- end of font-awesome -->
+
+ <!-- style-CSS -->
+ <link rel="stylesheet" href="./Css/main.css">
+ <link rel="stylesheet" href="./Css/CheckOut.css">
+ <!-- end of style-CSS -->
+
+ <!-- Sweet-Alert Effect -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ <!-- end of Sweet-Alert Effect -->
+
+</head>
+<body>
+  
+  <!-- pre-loader -->
+  <div class="preloader">
+    <img class="preloader__item" src="./images/PreLoader_CozyHouse.gif" alt="preloader">
+  </div>
+  <!-- end of pre-loader -->
+
+  <!-- checkOut  -->
+  <section class="section checkOut">
+
+    <!-- checkOut- details -->
+    <div class="wrapper">
+      <!-- checkOut-title -->
+      <h2>Payment of The Cart </h2>
+
+      <!-- end of checkOut-title -->
+      <!-- checkOut-form -->
+      <form method="POST">
+        <!-- checkOut-form-title -->
+        <h4 class="checkOut-h4">account</h4>
+        <!-- end of checkOut-form-title -->
+
+        <!-- single-checkOut-form-group -->
+        <div class="input-group">
+          <!-- single-checkOut-form-box -->
+          <div class="input-box">
+            <input type="text" id="input01" placeholder="First Name" class="checkOut-name clear" required>
+            <i class="fa fa-user icon"></i>
+          </div>
+          <!-- end of single-checkOut-form-box -->
+
+          <!-- single-checkOut-form-box -->
+          <div class="input-box">
+            <input type="text" id="input02" placeholder="Nick Name" class="checkOut-name clear" required>
+            <i class="fa fa-user icon"></i>
+          </div>
+          <!-- end of single-checkOut-form-box -->
+        </div>
+        <!-- end of single-checkOut-form-group -->
+
+        <!-- single-checkOut-form-group -->
+        <div class="input-group">
+          <!-- single-checkOut-form-box -->
+          <div class="input-box">
+            <input type="email" id="input03" placeholder="Email Address" class="checkOut-name clear" required>
+            <i class="fa fa-envelope icon"></i>
+          </div>
+          <!-- end of single-checkOut-form-box -->
+        </div>
+        <!-- end of single-checkOut-form-group -->
+
+        <!-- single-checkOut-form-group -->
+        <div class="input-group">
+
+          <!-- single-checkOut-form-box -->
+          <div class="input-box">
+            <h4 class="checkOut-h4">Date of Birth</h4>
+            <input type="text" id="input04" placeholder="DD" class="dob clear">
+            <input type="text" id="input05" placeholder="MM" class="dob clear">
+            <input type="text" id="input06" placeholder="YYYY" class="dob clear">
+          </div>
+          <!-- end of single-checkOut-form-box -->
+
+          <!-- single-checkOut-form-box -->
+          <div class="input-box">
+            <h4 class="checkOut-h4">Gender</h4>
+            <!-- input-box-radio -->
+            <input type="radio" id="b1" name="gender" checked class="radio">
+            <label for="b1">Male</label>
+            <!-- end of input-box-radio -->
+
+            <!-- input-box-radio -->
+            <input type="radio" id="b2" name="gender" checked class="radio">
+            <label for="b2">Female</label>
+            <!-- end of input-box-radio -->
+          </div>
+          <!-- end of single-checkOut-form-box -->
+        </div>
+        <!-- end of single-checkOut-form-group -->
+
+
+        <!-- single-checkOut-form-group -->
+        <div class="input-group">
+          <!-- single-checkOut-form-box -->
+          <div class="input-box">
+            <h4 class="checkOut-h4">Payment Details</h4>
+            <!-- input-box-radio -->
+            <input type="radio" id="bc1" name="pay" checked class="radio">
+            <label for="bc1">
+              <span>
+                <i class="fab fa-cc-visa"></i>
+                credit card
+              </span>
+            </label>
+            <!-- end of input-box-radio -->
+
+            <!-- input-box-radio -->
+            <input type="radio" id="bc2" name="pay" checked class="radio">
+            <label for="bc2">
+              <span>
+                <i class="fab fa-cc-paypal"></i>
+                paypal
+              </span>
+            </label>
+            <!-- end of input-box-radio -->
+          </div>
+          <!-- end of single-checkOut-form-box -->
+        </div>
+        <!-- end of single-checkOut-form-group -->
+
+
+        <!-- single-checkOut-form-group -->
+        <div class="input-group">
+          <!-- single-checkOut-form-box -->
+          <div class="input-box">
+            <!-- input-box-tel -->
+            <input type="tel" id="input07" class="checkOut-name clear" id="cardNumber" placeholder="card Number" required>
+
+            <i class="fa fa-credit-card icon"></i>
+            <!-- end of input-box-tel -->
+          </div>
+          <!-- end of single-checkOut-form-box -->
+        </div>
+        <!-- end of single-checkOut-form-group -->
+
+        <!-- single-checkOut-form-group -->
+        <div class="input-group">
+          <!-- single-checkOut-form-box -->
+          <div class="input-box">
+            <!-- input-box-tel -->
+            <input type="tel" id="input08" class="checkOut-name clear" id="cvcNumber" placeholder="card CVC" required>
+
+            <i class="fa fa-user icon"></i>
+            <!-- end of input-box-tel -->
+          </div>
+          <!-- end of single-checkOut-form-box -->
+
+          <!-- single-checkOut-form-box -->
+          <div class="input-box">
+            <!-- input-box-select -->
+            <select>
+              <option>01</option>
+              <option>02</option>
+              <option>03</option>
+              <option>04</option>
+              <option>05</option>
+              <option>06</option>
+              <option>07</option>
+              <option>08</option>
+              <option>09</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+            </select>
+            <!-- end of input-box-select -->
+
+            <!-- input-box-select -->
+            <select>
+              <option>2021</option>
+              <option>2022</option>
+              <option>2023</option>
+              <option>2024</option>
+              <option>2025</option>
+              <option>2026</option>
+              <option>2027</option>
+              <option>2028</option>
+              <option>2029</option>
+              <option>2030</option>
+              <option>2031</option>
+              <option>2032</option>
+              <option>2033</option>
+              <option>2034</option>
+              <option>2035</option>
+            </select>
+            <!-- end of input-box-select -->
+          </div>
+          <!-- end of single-checkOut-form-box -->
+        </div>
+        <!-- end of single-checkOut-form-group -->
+
+        <!-- single-checkOut-form-group -->
+        <div class="input-group">
+          <!-- single-checkOut-form-box -->
+          <div class="input-box">
+            <button type="submit" id="payNow"> Pay now</button>
+          </div>
+          <!-- end of single-checkOut-form-box -->
+        </div>
+        <!-- end of single-checkOut-form-group -->
+
+      </form>
+      <!-- end of checkOut-form -->
+    </div>
+    <!-- end of checkOut- details -->
+  </section>
+  <!-- end of checkOut  -->
+ <!-- JS -->
+ <script src="./JavaScript/CheckOut.js"></script>
+</body>
+</html>

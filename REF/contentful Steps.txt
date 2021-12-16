@@ -1,0 +1,56 @@
+contentful Steps:-
+
+- select on "Content model"
+
+- select on add field...write the project name
+
+- select new fields that content of the project like:-
+
+	* title ... type_text
+
+	* price ... type_number
+
+	* image ... type_media
+
+- add the project to the "Content" and the item with it's content(title, price, image)
+
+- getting the data by follow the following steps:-
+
+	* from "content model" click on "API documentation"
+
+	* copy the "Your first request" from "API documention page"
+
+		const client = contentful.createClient({
+  		// This is the space ID. A space is like a project folder in Contentful terms
+  		space: "developer_bookshelf",
+  		// This is the access token for this space. Normally you get both ID and the token in the Contentful web app
+  		accessToken: "0b7f6x59a0"
+		});
+		// This API call will request an entry with the specified ID from the space defined at the top, using a space-specific access token.
+		client
+  		.getEntry("5PeGS2SoZGSa4GuiQsigQu")
+  		.then(entry => console.log(entry))
+  		.catch(err => console.log(err));
+
+	* copy the following "JS-link" into "HTML-file" from "API decumention page"
+
+		<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+
+	*back to "contentful-home" and enter to "API Keys"..setting>>API keys and add API with the following instruction:-
+
+		** take space ID and put it in the "space" in javaScript file
+
+		** take "Content Delivery API - access token" and put it in "accessToken" in JavaScript file
+
+	* back to "API Documentation" and press "getEntries"(in left side bar)
+
+		** copy the content example to "JavaScript file" ... "Class Products"
+
+			const contentful = await client.getEntries()
+                  	console.log(contentful.items)
+
+		** press on "Query entries"
+
+		** select "JavaScript" and copy "code Sample" to "JavaScript file- getEntries()"
+
+		** back to "content model" and enter into the specific project and take "content type ID" from the right side of the page

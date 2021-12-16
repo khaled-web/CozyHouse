@@ -4,7 +4,7 @@
       "sys": { "id": "1" },
       "fields": {
         "title": "queen panel bed",
-        "price": 350,
+        "price": 350.05,
         "image": { "fields": { "file": { "url": "./images/product-1.jpeg" } } }
       }
     },
@@ -12,7 +12,7 @@
       "sys": { "id": "2" },
       "fields": {
         "title": "king panel bed",
-        "price": 200,
+        "price": 200.25,
         "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
       }
     },
@@ -20,7 +20,7 @@
       "sys": { "id": "3" },
       "fields": {
         "title": "single panel bed",
-        "price": 155,
+        "price": 155.15,
         "image": { "fields": { "file": { "url": "./images/product-3.jpeg" } } }
       }
     },
@@ -28,7 +28,7 @@
       "sys": { "id": "4" },
       "fields": {
         "title": "twin panel bed",
-        "price": 500,
+        "price": 500.65,
         "image": { "fields": { "file": { "url": "./images/product-4.jpeg" } } }
       }
     },
@@ -36,7 +36,7 @@
       "sys": { "id": "5" },
       "fields": {
         "title": "fridge",
-        "price": 245,
+        "price": 245.75,
         "image": { "fields": { "file": { "url": "./images/product-5.jpeg" } } }
       }
     },
@@ -44,7 +44,7 @@
       "sys": { "id": "6" },
       "fields": {
         "title": "dresser",
-        "price": 120,
+        "price": 120.35,
         "image": { "fields": { "file": { "url": "./images/product-6.jpeg" } } }
       }
     },
@@ -52,7 +52,7 @@
       "sys": { "id": "7" },
       "fields": {
         "title": "couch",
-        "price": 250,
+        "price": 250.15,
         "image": { "fields": { "file": { "url": "./images/product-7.jpeg" } } }
       }
     },
@@ -60,8 +60,104 @@
       "sys": { "id": "8" },
       "fields": {
         "title": "table",
-        "price": 95,
+        "price": 95.85,
         "image": { "fields": { "file": { "url": "./images/product-8.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "9" },
+      "fields": {
+        "title": "leather sofa ",
+        "price": 200.95,
+        "image": { "fields": { "file": { "url": "./images/product-9.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "10" },
+      "fields": {
+        "title": " Large Sectional Sofa",
+        "price": 445.15,
+        "image": { "fields": { "file": { "url": "./images/product-10.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "11" },
+      "fields": {
+        "title": "Modern library",
+        "price": 100.15,
+        "image": { "fields": { "file": { "url": "./images/product-11.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "12" },
+      "fields": {
+        "title": "dining table set 6 chairs marble",
+        "price": 425.25,
+        "image": { "fields": { "file": { "url": "./images/product-12.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "13" },
+      "fields": {
+        "title": "Modern Sofa",
+        "price": 120.15,
+        "image": { "fields": { "file": { "url": "./images/product-13.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "14" },
+      "fields": {
+        "title": "2 Piece Modern Outdoor",
+        "price": 30.15,
+        "image": { "fields": { "file": { "url": "./images/product-14.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "15" },
+      "fields": {
+        "title": "Garden Rattan Furniture Wicker",
+        "price": 90.30,
+        "image": { "fields": { "file": { "url": "./images/product-15.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "16" },
+      "fields": {
+        "title": "high quality luxury coffee table",
+        "price": 180.35,
+        "image": { "fields": { "file": { "url": "./images/product-16.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "17" },
+      "fields": {
+        "title": "Modern home furniture",
+        "price": 210.95,
+        "image": { "fields": { "file": { "url": "./images/product-17.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "18" },
+      "fields": {
+        "title": "Cup Holder Modular with Storage",
+        "price": 157.55,
+        "image": { "fields": { "file": { "url": "./images/product-18.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "19" },
+      "fields": {
+        "title": "European sofa",
+        "price": 336.45,
+        "image": { "fields": { "file": { "url": "./images/product-19.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "20" },
+      "fields": {
+        "title": "Modern Style Patio Rattan  Sofa",
+        "price": 165.25,
+        "image": { "fields": { "file": { "url": "./images/product-20.jpeg" } } }
       }
     }
   ]

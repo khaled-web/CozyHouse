@@ -1,3 +1,72 @@
+// preloader functionality
+function UIpreloader() {};
+
+// hide preloader
+UIpreloader.prototype.hidePreloader = function () {
+      const preloader = document.querySelector('.preloader');
+      preloader.style.display = 'none';
+};
+
+// event listener function
+function eventListener() {
+      const uiPreloader = new UIpreloader();
+
+      // hide preloader
+      window.addEventListener('load', function () {
+            uiPreloader.hidePreloader();
+      });
+};
+eventListener();
+
+// select links
+const scrollLinks = document.querySelectorAll(".scroll-link");
+scrollLinks.forEach(link => {
+      link.addEventListener("click", e => {
+            // prevent default
+            e.preventDefault();
+            const id = e.target.getAttribute("href").slice(1);
+            const element = document.getElementById(id);
+            //
+            let position = element.offsetTop - 60;
+
+            window.scrollTo({
+                  left: 0,
+                  top: element.offsetTop,
+                  top: position,
+                  behavior: "smooth"
+            });
+      });
+});
+
+
+// navList functionality
+const navListOverlay = document.querySelector('.navList-overlay');
+const navIcon = document.querySelector('.nav-icon');
+const navList = document.querySelector('.navList');
+const navCloser = document.querySelector('.nav-closer');
+
+navIcon.addEventListener('click', () => {
+      navListOverlay.classList.add('transparentBcg');
+      navList.classList.add('showNav');
+});
+
+navCloser.addEventListener('click', () => {
+      navList.classList.remove('showNav');
+      navListOverlay.classList.remove('transparentBcg');
+})
+
+
+
+// Contentful Functionality
+
+// const client = contentful.createClient({
+//       // This is the space ID. A space is like a project folder in Contentful terms
+//       space: "sfi1z3o2w863",
+//       // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
+//       accessToken: "PnHViFguFmQBwGzDoaC7dZf4kdwyxsV5GPEeBXBmaG0"
+// });
+
+
 // variables
 const cartBtn = document.querySelector('.cart-btn');
 const closeCartBtn = document.querySelector('.close-cart');
@@ -21,6 +90,12 @@ let buttonsDOM = [];
 class Products {
       async getProducts() {
             try {
+                  // const contentful = await client.getEntries({
+                  //       content_type: "cozyHouseProduct"
+                  // })
+                  // console.log(contentful.items)
+
+
                   let result = await fetch('../products.json');
                   let data = await result.json();
                   let products = data.items;
@@ -41,6 +116,7 @@ class Products {
                         }
                   })
                   return products;
+
             } catch (error) {
                   console.log(error);
 
@@ -281,3 +357,6 @@ document.addEventListener('DOMContentLoaded', () => {
       })
 
 });
+
+// Footer Functionality
+document.getElementById("date").innerHTML = new Date().getFullYear();

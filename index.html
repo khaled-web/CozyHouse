@@ -1,238 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>ComfyHouse</title>
- <!-- Favicon -->
- <link rel="shortcut icon" href="./Css/favicon20.ico" type="image/x-icon">
- <!-- end of Favicon -->
- 
- <!-- Icon-Awesome -->
- <link rel="stylesheet" href="./css/fontawesome-free-5.12.1-web/css/all.min.css">
- <!-- end of Icon-Awesome -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cozyHouse</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./Css/favicon.ico" type="image/x-icon">
+  <!-- end of Favicon -->
 
- <!-- custom Css -->
- <link rel="stylesheet" href="./Css/main.css">
- <!-- end of custom Css -->
+  <!-- Icon-Awesome -->
+  <link rel="stylesheet" href="./css/fontawesome-free-5.12.1-web/css/all.min.css">
+  <!-- end of Icon-Awesome -->
+
+  <!-- custom Css -->
+  <link rel="stylesheet" href="./Css/main.css">
+  <!-- end of custom Css -->
 </head>
+
 <body>
- <!-- navbar -->
- <nav class="navbar">
-  <!-- navbar-center -->
-  <div class="navbar-center">
-   <!-- nav-icon -->
-   <span class="nav-icon">
-    <i class="fas fa-bars"></i>
-   </span>
-   <!-- end of nav-icon -->
 
-   <!-- navImage -->
-   <img class="navImage" src="./images/Logo_02.png" alt="">
-   <!-- end of navImage -->
-
-   <!-- cart-btn -->
-   <div class="cart-btn">
-    <span class="nav-icon">
-     <i class="fas fa-cart-plus"></i>
-    </span>
-    <div class="cart-items">0</div>
-   </div>
-   <!-- end of cart-btn -->
+  <!-- pre-loader -->
+  <div class="preloader">
+    <img class="preloader__item" src="./images/PreLoader_CozyHouse.gif" alt="preloader">
   </div>
-  <!-- end of navbar-center -->
- </nav>
- <!-- end of navbar -->
+  <!-- end of pre-loader -->
 
- <!-- hero -->
- <header class="hero">
-  <!-- banner -->
-  <div class="banner">
-   <h1 class="banner-title">
-    furniture collection
-   </h1>
-   <button class="banner-btn">
-    <a href="#">shop now</a> 
-   </button>
-  </div>
-  <!-- end of banner -->
- </header>
- <!-- end of hero -->
+  <!-- ......................................................................................... -->
 
- <!-- products -->
- <section class="products">
-  <!-- section-title -->
-  <div class="section-title">
-   <h2>out products</h2>
-  </div>
-  <!-- end of section-title -->
+  <!-- navbar -->
+  <nav class="navbar">
+    <!-- navbar-center -->
+    <div class="navbar-center">
+      <!-- nav-icon -->
+      <span class="nav-icon">
+        <i class="fas fa-bars"></i>
+      </span>
+      <!-- end of nav-icon -->
+
+      <!-- navImage -->
+      <img class="navImage" src="./images/CozyHouse-logo.png" alt="">
+      <!-- end of navImage -->
+
+      <!-- cart-btn -->
+      <div class="cart-btn">
+        <span class="nav-icon">
+          <i class="fas fa-cart-plus"></i>
+        </span>
+        <div class="cart-items">0</div>
+      </div>
+      <!-- end of cart-btn -->
+    </div>
+    <!-- end of navbar-center -->
+  </nav>
+  <!-- end of navbar -->
+
+    <!-- nav-overlay -->
+  <div class="navList-overlay">
+    <div class="navList">
+      <div class="navbar-header">
+        <span class="nav-closer" id="nav-closer">
+          <i class="fas fa-times"></i>
+        </span>
+      </div>
   
-  <!-- products-center -->
-  <div class="products-center">
+      <ul class="nav-items">
+        <li>
+          <a href="#index" class="nav-link scroll-link">home</a>
+        </li>
   
-   <!-- single product -->
-    <article class="product">
-     <!-- img-container -->
+        <li>
+          <a href="#about" class="nav-link scroll-link">about</a>
+        </li>
+  
+        <li>
+          <a href="#products" class="nav-link scroll-link">products</a>
+        </li>
+  
+        <li>
+          <a href="#contact" class="nav-link scroll-link">contact</a>
+        </li>
+  
+      </ul>
+    </div>
+  </div>
+  <!-- end of nav-overlay -->
+
+  <!-- ......................................................................................... -->
+
+  <!-- hero -->
+  <header class="hero" id="index">
+    <!-- banner -->
+    <div class="banner">
+      <h1 class="banner-title">
+        furniture collection
+      </h1>
+      <button class="banner-btn">
+        <a class="scroll-link" href="#products">shop now</a>
+      </button>
+    </div>
+    <!-- end of banner -->
+  </header>
+  <!-- end of hero -->
+
+  <!-- ......................................................................................... -->
+
+  <!-- about -->
+  <section class="about section-padding" id="about">
+    <div class="grid-container grid-container--medium-2">
+      <!-- about-container -->
+      <article class="about-container">
+        <!-- first child -->
+        <div class="section-title">
+          <h1 class="section-title__name bell-fonts">
+            our story...
+          </h1>
+          <div class="section-title_underline"></div>
+          <p class="section-title_text">
+            Are you ready to talk furniture? Whether yours is beautiful antique, handily thrifted, desperately purchased when you realized you had nothing to sit on, or of any other furniture variety, you have it. And if you’re a word lover, you can class up the joint and maybe even impress a few guests with some detailed knowledge about your stuff! Or the stuff at that fancy hotel you try to stay in once a year. To help you get started, here’s a list of many types of furniture that you need to add to your cart.
+          </p>
+        </div>
+        <!-- end of second child -->
+
+        <!-- second child -->
+        <div class="about_img">
+          <img src="./images/About_01.jpg" class="about_img-item" alt="about-img">
+        </div>
+        <!-- end of second child -->
+      </article>
+      <!-- end of about-container -->
+
+      <!-- about-container -->
+      <article class="about-container">
+        <!-- first child -->
+        <div class="section-title">
+          <h1 class="section-title__name bell-fonts">
+            What we do...
+          </h1>
+          <div class="section-title_underline"></div>
+          <p class="section-title_text">
+            If you need to Make Your Home Authentic and Unique with Our Impressive Rustic Furniture, CozyHouse does have this reputation of both producing furniture, but also an incredible design sense and work ethic sense.  CozyHouse has a new vision to make the best of anything that they build as furniture because The design creates culture. Culture shapes values. Values determine the future.
+          </p>
+        </div>
+        <!-- end of second child -->
+
+        <!-- second child -->
+        <div class="about_img about_img-special">
+          <img src="./images/About_02.jpg" class="about_img-item" alt="about-img">
+        </div>
+        <!-- end of second child -->
+      </article>
+      <!-- end of about-container -->
+    </div>
+  </section>
+  <!-- end of about -->
+
+  <!-- ......................................................................................... -->
+
+  <!-- products -->
+  <section class="products" id="products">
+    <!-- section-title -->
+    <div class="section-title">
+      <h2>out products</h2>
+    </div>
+    <!-- end of section-title -->
+    <div class="section-title_underline"></div>
+    <!-- products-center -->
+    <div class="products-center">
+
+      <!-- single product -->
+      <!-- <article class="product">
       <div class="img-container">
        <img src="./images/product-1.jpeg" alt="product" class="product-img">
-       <!-- bag-btn -->
+
        <button class="bag-btn" data-id='1'>
         <i class="fas fa-shopping-cart"></i>
         add to bag
        </button>
-       <!-- end of bag-btn -->
+
       </div>
-     <!-- end of img-container -->
      <h3>queen bed</h3>
      <h4>$350</h4>
-    </article>
-   <!-- end of single product -->
+    </article> -->
+      <!-- end of single product -->
 
-   <!-- single product -->
-    <article class="product">
-     <!-- img-container -->
-      <div class="img-container">
-       <img src="./images/product-2.jpeg" alt="product" class="product-img">
-       <!-- bag-btn -->
-       <button class="bag-btn" data-id='1'>
-        <i class="fas fa-shopping-cart"></i>
-        add to bag
-       </button>
-       <!-- end of bag-btn -->
-      </div>
-     <!-- end of img-container -->
-     <h3>king panel bed</h3>
-     <h4>$200</h4>
-    </article>
-   <!-- end of single product -->
+    </div>
+    <!-- end of product-center -->
+  </section>
+  <!-- end of products -->
 
-   <!-- single product -->
-    <article class="product">
-     <!-- img-container -->
-      <div class="img-container">
-       <img src="./images/product-3.jpeg" alt="product" class="product-img">
-       <!-- bag-btn -->
-       <button class="bag-btn" data-id='1'>
-        <i class="fas fa-shopping-cart"></i>
-        add to bag
-       </button>
-       <!-- end of bag-btn -->
-      </div>
-     <!-- end of img-container -->
-     <h3>twin panel bed</h3>
-     <h4>$500</h4>
-    </article>
-   <!-- end of single product -->
+  <!-- ......................................................................................... -->
 
-   <!-- single product -->
-    <article class="product">
-     <!-- img-container -->
-      <div class="img-container">
-       <img src="./images/product-4.jpeg" alt="product" class="product-img">
-       <!-- bag-btn -->
-       <button class="bag-btn" data-id='1'>
-        <i class="fas fa-shopping-cart"></i>
-        add to bag
-       </button>
-       <!-- end of bag-btn -->
-      </div>
-     <!-- end of img-container -->
-     <h3>single panel bed</h3>
-     <h4>$155</h4>
-    </article>
-   <!-- end of single product -->
+  <!-- ......................................................................................... -->
 
-
-   <!-- single product -->
-    <article class="product">
-     <!-- img-container -->
-      <div class="img-container">
-       <img src="./images/product-5.jpeg" alt="product" class="product-img">
-       <!-- bag-btn -->
-       <button class="bag-btn" data-id='1'>
-        <i class="fas fa-shopping-cart"></i>
-        add to bag
-       </button>
-       <!-- end of bag-btn -->
-      </div>
-     <!-- end of img-container -->
-     <h3>fridge</h3>
-     <h4>$245</h4>
-    </article>
-   <!-- end of single product -->
-
-   <!-- single product -->
-    <article class="product">
-     <!-- img-container -->
-      <div class="img-container">
-       <img src="./images/product-6.jpeg" alt="product" class="product-img">
-       <!-- bag-btn -->
-       <button class="bag-btn" data-id='1'>
-        <i class="fas fa-shopping-cart"></i>
-        add to bag
-       </button>
-       <!-- end of bag-btn -->
-      </div>
-     <!-- end of img-container -->
-     <h3>dresser</h3>
-     <h4>$120</h4>
-    </article>
-   <!-- end of single product -->
-
-   <!-- single product -->
-    <article class="product">
-     <!-- img-container -->
-      <div class="img-container">
-       <img src="./images/product-7.jpeg" alt="product" class="product-img">
-       <!-- bag-btn -->
-       <button class="bag-btn" data-id='1'>
-        <i class="fas fa-shopping-cart"></i>
-        add to bag
-       </button>
-       <!-- end of bag-btn -->
-      </div>
-     <!-- end of img-container -->
-     <h3>couch</h3>
-     <h4>$250</h4>
-    </article>
-   <!-- end of single product -->
-
-
-   <!-- single product -->
-    <article class="product">
-     <!-- img-container -->
-      <div class="img-container">
-       <img src="./images/product-8.jpeg" alt="product" class="product-img">
-       <!-- bag-btn -->
-       <button class="bag-btn" data-id='1'>
-        <i class="fas fa-shopping-cart"></i>
-        add to bag
-       </button>
-       <!-- end of bag-btn -->
-      </div>
-     <!-- end of img-container -->
-     <h3>table</h3>
-     <h4>$95</h4>
-    </article>
-   <!-- end of single product -->
-  </div>
-  <!-- end of product-center -->
- </section>
- <!-- end of products -->
-
- <!-- cart-overlay -->
- <div class="cart-overlay">
-  <!-- cart -->
-  <div class="cart">
-   <span class="close-cart">
-    <i class="fas fa-window-close"></i>
-   </span>
-   <h2>your cart</h2>
-   <!-- cart-content -->
-   <div class="cart-content">
-    <!-- cart-item -->
-    <!-- <div class="cart-item">
+  <!-- cart-overlay -->
+  <div class="cart-overlay">
+    <!-- cart -->
+    <div class="cart">
+      <span class="close-cart">
+        <i class="fas fa-times"></i>
+      </span>
+      <h2>your cart</h2>
+      <!-- cart-content -->
+      <div class="cart-content">
+        <!-- cart-item -->
+        <!-- <div class="cart-item">
        <img src="./images/product-1.jpeg" alt="product">
        <div>
         <h4>queen bed</h4>
@@ -247,26 +220,156 @@
         <i class="fas fa-chevron-down"></i>
        </div>
     </div> -->
-    <!-- end of cart-item -->
-   </div>
-   <!-- end of cart-content -->
-   <!-- cart-footer -->
-   <div class="cart-footer">
-    <h3>
-     your total : $ <span class="cart-total">0</span>
-    </h3>
-    <button class="clear-cart banner-btn">
-     clear cart
-    </button>
-   </div>
-   <!-- end of cart-footer -->
-  </div>
-  <!-- end of cart -->
- </div>
- <!-- end of cart-overlay -->
+        <!-- end of cart-item -->
+      </div>
+      <!-- end of cart-content -->
+      <!-- cart-footer -->
+      <div class="cart-footer">
+        <h3>
+          your total : $ <span class="cart-total">0</span>
+        </h3>
+        <button class="clear-cart banner-btn">
+          clear cart
+        </button>
 
- <!-- custom JavaScript -->
- <script src="./JavaScript/app.js"></script>
- <!-- end of custom JavaScript -->
+        <button class="clear-cart banner-btn">
+          <a class="link-btn" target="_blank" href="chickOut.html">finish the cart payment</a>
+        </button>
+      </div>
+      <!-- end of cart-footer -->
+    </div>
+    <!-- end of cart -->
+  </div>
+  <!-- end of cart-overlay -->
+
+  <!-- ......................................................................................... -->
+
+  <!-- contact -->
+  <section class="contact section-padding" id="contact">
+    <!-- section-title -->
+    <div class="section-title section-title__left">
+      <h1 class="section-title__name bell-fonts">
+        our contact
+      </h1>
+      <div class="section-title_underline"></div>
+    </div>
+    <!-- end of section-title -->
+
+    <!-- contact-container -->
+    <div class="contact-container">
+        <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2766.041261820391!2d35.9391794485939!3d31.939663433243876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b5f9384fe5789%3A0x891cb27060f1ce6b!2z2KfYs9mI2KfZgiDYp9mE2LPZhNi32KfZhg!5e0!3m2!1sen!2seg!4v1639574756436!5m2!1sen!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <!-- contact-info -->
+      <div class="contact-info">
+      <!-- single contact-item -->
+      <div class="contact-item">
+        <!-- contact-item__icon -->
+        <div class="contact-item__icon">
+          <i class="fas fa-map-pin"></i>
+        </div>
+        <!-- end of contact-item__icon -->
+        <h2 class="contact-item__title">
+          address
+        </h2>
+        <p class="contact-item__text">
+          st. Osama bin Zaid, Amman, Jordan
+        </p>
+      </div>
+      <!-- end of single contact item -->
+
+      <!-- single contact-item -->
+      <div class="contact-item">
+        <!-- contact-item__icon -->
+        <div class="contact-item__icon">
+          <i class="fas fa-headphones-alt"></i>
+        </div>
+        <!-- end of contact-item__icon -->
+        <h2 class="contact-item__title">
+          support
+        </h2>
+        <p class="contact-item__text">
+          <span><i class="fas fa-phone"></i></span>
+          +962778042942
+        </p>
+        <p class="contact-item__text">
+          <span><i class="fas fa-envelope"></i></span>
+          CozyHouse@hotmail.com
+        </p>
+      </div>
+      <!-- end of single contact item -->
+
+      <!-- single contact-item -->
+      <div class="contact-item">
+        <!-- contact-item__icon -->
+        <div class="contact-item__icon">
+          <i class="fas fa-clock"></i>
+        </div>
+        <!-- end of contact-item__icon -->
+        <h2 class="contact-item__title">
+          work time
+        </h2>
+        <p class="contact-item__text">
+          sunday - thursday 10am - 10pm
+        </p>
+        <p class="contact-item__text">
+          friday - saturday 9am - 11pm
+        </p>
+      </div>
+      <!-- end of single contact item -->
+      </div>
+      <!-- end of contact-info -->
+    </div>
+    <!-- end of contact-container -->
+  </section>
+  <!-- end of contact -->
+
+  <!-- ......................................................................................... -->
+
+  <!-- footer -->
+  <footer class="section footer">
+    <!-- banner__icons -->
+    <div class="banner__icons">
+      <!-- single-icon -->
+      <a href="http://www.facebook.com" target="_blank" class="banner__social-icon">
+        <i class="fab fa-facebook fa-fw"></i>
+      </a>
+      <!-- end of single-icon -->
+
+      <!-- single-icon -->
+      <a href="http://www.twitter.com" target="_blank" class="banner__social-icon">
+        <i class="fab fa-twitter fa-fw"></i>
+      </a>
+      <!-- end of single-icon -->
+
+      <!-- single-icon -->
+      <a href="http://www.googleplus.com" target="_blank" class="banner__social-icon">
+        <i class="fab fa-google-plus fa-fw"></i>
+      </a>
+      <!-- end of single-icon -->
+
+      <!-- single-icon -->
+      <a href="http://www.instagram.com" target="_blank" class="banner__social-icon">
+        <i class="fab fa-instagram fa-fw"></i>
+      </a>
+      <!-- end of single-icon -->
+    </div>
+    <!-- end of banner__icons -->
+    </div>
+    <!-- end of banner -->
+    <!-- footer-keepRights -->
+    <p class="copyright">
+      copyright &copy; CozyHouse <span id="date"></span>.all rights reserved
+    </p>
+    <!-- end of footer-keepRights -->
+  </footer>
+  <!-- end of footer -->
+
+
+  <!-- contentful JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+  <!-- end of contentful JavaScript -->
+  <!-- custom JavaScript -->
+  <script src="./JavaScript/app.js"></script>
+  <!-- end of custom JavaScript -->
 </body>
+
 </html>
